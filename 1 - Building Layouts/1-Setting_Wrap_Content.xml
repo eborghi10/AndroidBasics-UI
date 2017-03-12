@@ -1,0 +1,6 @@
+<TextView
+    android:text="Happy Birthday to you, Happy Birthday to you, Happy Birthday, Happy Birthday, Happy Birthday to you!"
+    android:background="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"/>
