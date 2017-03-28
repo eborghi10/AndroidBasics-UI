@@ -1,0 +1,160 @@
+<!--
+Drawing to code in 3 steps:
+    1) Select the views (TextView, ImageView, EditText, Button)
+    2) Position the views (Relative or Linear layout, alignParent, ...)
+    3) Style the views
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-78dp"
+        android:src="@drawable/banner"
+        android:id="@+id/banner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Business Name"
+        android:textSize="32sp"
+        android:fontFamily="roboto"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:textAlignment="center"
+        android:id="@+id/TextView1"
+        android:layout_alignBottom="@+id/banner"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:id="@+id/favourite"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxWidth="40dp"
+        android:maxHeight="40dp"
+        android:layout_toRightOf="@id/TextView1"
+        android:layout_alignTop="@id/TextView1"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/workers"
+        android:id="@+id/workers"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="30dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry type"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignTop="@id/workers"
+        android:layout_toRightOf="@id/workers"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map"
+        android:id="@+id/address"
+        android:layout_below="@id/workers"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="@id/address"
+        android:text="My Address 1234, B2412ER, City, Province"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignTop="@id/address"
+        android:layout_toRightOf="@id/address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mail"
+        android:id="@+id/contact"
+        android:layout_below="@id/address"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PhoneNumber"
+        android:layout_alignParentRight="@id/contact"
+        android:text="(54) 11 4253-3523"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignTop="@id/contact"
+        android:layout_toRightOf="@id/contact"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="@id/contact"
+        android:text="contact@mail.com"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignTop="@id/PhoneNumber"
+        android:layout_toRightOf="@id/contact"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clock"
+        android:id="@+id/hours"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OpenText"
+        android:layout_alignParentRight="@id/hours"
+        android:text="Open today"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignTop="@id/hours"
+        android:layout_toRightOf="@id/hours"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1PM-12AM"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignTop="@id/OpenText"
+        android:layout_toRightOf="@id/OpenText"
+        android:layout_marginLeft="15dp"/>
+
+</RelativeLayout>

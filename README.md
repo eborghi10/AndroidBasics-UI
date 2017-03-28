@@ -26,6 +26,6 @@
 
  ## Part 3 - Practice Set : Happy Birthday card invitation
 
- 1) Hello World.
+ 1) Birthday card.
 
- 2)
+ 2) My Business info contact card.
