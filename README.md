@@ -12,13 +12,13 @@
 
  ## Part 2 - Building Layouts
 
- 1) Absolute positioning with <LinearLayout/>.
+ 1) Absolute positioning with _LinearLayout_.
 
  2) Changing the layout width and height.
 
  3) Change the weight.
 
- 4) <RelativeLayout/>.
+ 4) _RelativeLayout_.
 
  5) Classical relative layout example.
 
